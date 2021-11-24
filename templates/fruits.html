@@ -24,8 +24,22 @@
         <section class="jumbotron text-center">
           <div class="container">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
-
+            <table style="border: black solid 2px;">
+              <thead style="border: black solid 2px;">
+                <tr>
+                  <td>Strawberry</td>
+                  <td>Raspberry</td>
+                  <td>Apple</td>
+                </tr>
+              </thead>
+              <tbody >
+                <tr>
+                  <td style="border: black solid 2px;"><img src="{{url_for('static', filename='img/strawberry.png')}}"></td>
+                  <td style="border: black solid 2px;"><img src="{{url_for('static', filename='img/raspberry.png')}}"></td>
+                  <td style="border: black solid 2px;"><img src="{{url_for('static', filename='img/apple.png')}}"></td>
+                </tr>
+              </tbody>
+            </table>
             <p>
               <a href="/" class="btn btn-primary my-2">Go back</a>
             </p>
